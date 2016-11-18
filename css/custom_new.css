@@ -43,10 +43,6 @@
 	background-color: #FFE2AA;
 }
 
-.melon {
-	background-color: #ed1b24;
-}
-
 .dark-melon {
 	background-color: #ed5026;
 }
@@ -64,6 +60,7 @@
 	background-color: #d8d8d8;
 	padding-top: 50px;
 	padding-bottom: 30px;
+	height: 65vh;
 }
 .bio {
 	background-color: white;
@@ -263,10 +260,8 @@ a.social-media > .on-hover {
 .album-container {
 	padding-bottom: 40px;
 }
-.album-container img {
-	-moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+.overlay-container {
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .album-art > img {
 	height: 400px;
@@ -302,11 +297,6 @@ a.social-media > .on-hover {
 	/* Some animations not necessary on mobile */
 	.bio:hover {
 		transform: translateY(-50px);
-	}
-	.album-container img:hover {
-		transform: scale(1.3);
-		margin-bottom: 75px;
-		margin-top: 75px;
 	}
 	.overlay:hover {
 		opacity: 1;
