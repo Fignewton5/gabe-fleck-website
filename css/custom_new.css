@@ -1,0 +1,347 @@
+/* Colors */
+.green {
+	background-color: #6ab344;
+}
+
+.light-green {
+	background-color: #ace5ac;
+}
+
+.blue {
+	background-color: #4cadcb;
+}
+
+.light-blue {
+	background-color: #3399ff;
+}
+
+.gray {
+	background-color: #999;
+}
+
+.dark-gray {
+	background-color: #d8d8d8;
+}
+
+.white {
+	background-color: white;
+}
+
+.pale-blue {
+	background-color: #7788AA;
+}
+
+.dark-pale-blue {
+	background-color: #4E648E;
+}
+
+.royal-blue {
+	background-color: #152B55;
+}
+
+.pale-yellow {
+	background-color: #FFE2AA;
+}
+
+.melon {
+	background-color: #ed1b24;
+}
+
+.dark-melon {
+	background-color: #ed5026;
+}
+
+.dark-red {
+	background-color: #ed1b24;
+}
+
+.gold {
+	background-color: #AA8339;
+}
+
+/* Player Bio Stuff */
+.bio-container {
+	background-color: #d8d8d8;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.bio {
+	background-color: white;
+	padding-bottom: 20px;
+	margin: auto;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+	transition-property: transform;
+	transition-duration: .5s;
+}
+.bio > img {
+	margin: auto;
+	max-height: 400px;
+}
+
+/* Section Headers */
+div[id$="tag"] {
+	padding-top: 10vh;
+	padding-bottom: 5vh;
+}
+div[id$="tag"] > h1 {
+	font-size: 48px;
+}
+
+/* Banner / Footer */
+.nav-btn {
+	height: 100%;
+}
+.nav-btn:hover {
+	background-color: white;
+}
+.footer {
+	padding-bottom: 10vh;
+}
+.fixed-nav-filler {
+	height:20vh;
+}
+h1.title {
+	color: white;
+	font-size: 48px;
+}
+.dropdown-btn {
+	background-image: url("../media/dropdown_button_resize.png");
+	height: 100px;
+	width: 100px;
+	float: right;
+}
+.banner {
+	height: 20vh;
+	padding-top: 5vh;
+	position: fixed;
+	z-index: 20;	/* Bootstrap Carousel Bullets have z-index of 15 */
+}
+.banner-title {
+	text-align: left;
+}
+.banner-nav {
+	height: 100px;
+	display: none;
+	padding-right: 0;
+	padding-left: 0;
+}
+.footer  h2, .footer  h3 {
+	color: white;
+}
+.footer a, .footer a:hover {
+	text-decoration: underline;
+	color: white;
+}
+.footer > .scroll-up-btn {
+	padding-bottom: 10vh;
+}
+.scroll-up-btn {
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	position: relative;
+	width: 128px;
+	height: 128px;
+}
+.scroll-up-btn:hover {
+	background-color: white;
+}
+.scroll-up-btn:hover  .off-hover {
+	display: none;
+}
+.scroll-up-btn:hover  .on-hover {
+	display: block;
+}
+.on-hover {
+	display: none;
+}
+.scroll-up-btn a, .scroll-up-btn img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.scroll-up-btn-container {
+	display: none;
+	margin-bottom: 4px;
+}
+.website-stamp {
+	padding-top: 10vh;
+}
+.top-of-page {
+	position: absolute;
+}
+
+/* Hide normal link styling in nav bar */
+a[href$="tag"], a[href$="tag"]:hover {
+	color: #ed1b24;
+	text-decoration: none;
+}
+.nav-btn  h1 {
+	color: white;
+}
+.nav-btn:hover h1 {
+	color: #ed1b24;
+}
+
+/* Carousel Modifications */
+.carousel-container {
+	padding-right: 0;
+	padding-left: 0;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+.carousel-inner, .carousel-inner > .item > img {
+	height: 60vh;
+}
+.carousel-control, .right, .left {
+	background-image: none !important;
+}
+
+/* Social Media */
+.col-xs-3 > a > img {
+	padding-bottom: 40px;
+}
+a.social-media > .on-hover {
+	display: none;
+}
+
+/* Custom Helpers */
+.center-img {
+	margin-left: auto;
+	margin-right: auto;
+}
+.sm-block {
+	height: 10vh;
+}
+.md-block {
+	height: 20vh;
+}
+.lg-block {
+	height: 40vh;
+}
+.xl-block {
+	height: 60vh;
+}
+.gradient {
+	/* #dbd6d6 */
+	background: linear-gradient(white, #d8d8d8);
+}
+.center-children {
+	text-align: center;
+}
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+.clear-fix {
+	clear: both;
+}
+.debug1 {
+	border: solid 2px red;
+}
+.overlay-container {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+.overlay {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.5);
+	-moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+/* Album Images */
+.album-container {
+	padding-bottom: 40px;
+}
+.album-container img {
+	-moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.album-art > img {
+	height: 400px;
+}
+.album-title {
+	height: 10vh;
+}
+.music-content {
+	border-top-style: solid;
+	padding-bottom: 5vh;
+}
+
+/* Anything larger than mobile */
+@media only screen and (min-width: 768px) {
+	/* Adjust banner and get rid of mobile menu */
+	.banner-title {
+		text-align: center;
+	}
+	.banner-dropdown {
+		display: none;
+		position: absolute;
+	}
+	.banner-nav {
+		display: block;
+	}
+	/* Make banner relative and hide filler div */
+	.banner {
+		position: relative;
+	}
+	.fixed-nav-filler {
+		display: none;
+	}
+	/* Some animations not necessary on mobile */
+	.bio:hover {
+		transform: translateY(-50px);
+	}
+	.album-container img:hover {
+		transform: scale(1.3);
+		margin-bottom: 75px;
+		margin-top: 75px;
+	}
+	.overlay:hover {
+		opacity: 1;
+	}
+	/* Font Adjustments for Bigger Screens */
+	div[id$="tag"] > h1 {
+		font-size: 64px;
+	}
+	/* Styling for wider layouts */
+	.music-content {
+		border-style: groove;
+	}
+	/* Headhesive */
+	.headhesive {
+		position: fixed;
+		z-index: 20;
+		transform: translateY(-100%);
+		transition: all 0.75s ease-in-out;
+	}
+	.headhesive--stick {
+		transform: translateY(0%);
+		height: 10vh;
+		z-index: 20;
+	}
+	/* Social Media Icons */
+	a.social-media:hover > .on-hover {
+		display: block;
+	}
+	a.social-media:hover > .off-hover {
+		display: none;
+	}
+	/* Show scroll to top button */
+	.scroll-up-btn-container {
+		display: block;
+	}
+}
+
+

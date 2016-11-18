@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Gabe Fleck Music</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- jQuery -->
+	<!-- Bootstrap needs jQuery version < 3.0 -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap -->
+	<script   src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/custom_new.css">
+</head>
+
+<body>
+	<!-- Banner -->
+	<div class="col-xs-12 banner dark-red">
+		<div class="col-xs-8 col-sm-12 banner-title align-left">
+			<h1 class="title">Gabe Fleck Music</h1>
+		</div>
+		<div class="col-xs-4 banner-dropdown">
+			<div class="dropdown-btn"></div>
+		</div>
+	</div>
+	
+	<!-- Nav Bar (Hidden on mobile) -->
+	<div class="col-xs-12 banner-nav dark-red">
+		<div class="col-xs-3 nav-btn center-children">
+			<a href="#musictag"><h1>Music</h1></a>
+		</div>
+		<div class="col-xs-3 nav-btn center-children">
+			<a href="#abouttag"><h1>About</h1></a>
+		</div>
+		<div class="col-xs-3 nav-btn center-children">
+			<a href="#contacttag"><h1>Contact</h1></a>
+		</div>
+		<div class="col-xs-3 nav-btn center-children">
+			<a href="#bookingtag"><h1>Booking</h1></a>
+		</div>
+	</div>
+	
+	<!-- Div that will be the top of page anchor without messing up layout -->
+	<div class="top-of-page" id="toptag"></div>
+	
+	<!-- Content -->
+	<div class="col-xs-12 fixed-nav-filler">
+	</div>
+	<div class="col-xs-12 white center-children album-container debug">
+		<h1>Grab the new album on iTunes!</h1><br>
+		<a href="https://itunes.apple.com/us/album/life-through-emojis-project/id1161550095">
+			<div class="overlay-container" id="headhesive-anchor">
+				<img class="img-responsive center-img" src="media/life_through_emojis_artwork.jpg">
+				<div class="overlay"></div>
+			</div>
+		</a>
+	</div>
+	
+	<!-- Carousel -->
+	<div class="col-xs-12 carousel-container dark-gray debug" >
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+			<div class="item active">
+			  <img class="img-responsive center-img" src="media/band_pic1.jpg" alt="pic1">
+			  <div class="carousel-caption">
+				<h3>The Raven, Portland</h3>
+				<p>The band performing at Jonah Poole's birthday party.</p>
+			  </div>
+			</div>
+
+			<div class="item">
+			  <img src="media/band_pic2.jpg" class="center-img" alt="Chania">
+			  <div class="carousel-caption">
+				<h3>The Raven, Portland</h3>
+				<p>This is some caption.</p>
+			  </div>
+			</div>
+
+			<div class="item">
+			  <img src="media/band_pic3.jpg" class="center-img" alt="Flower">
+			  <div class="carousel-caption">
+				<h3>Pic 3</h3>
+				<p>This is some caption.</p>
+			  </div>
+			</div>
+
+			<div class="item">
+			  <img src="media/invoker_full.jpg" class="center-img" alt="Flower">
+			  <div class="carousel-caption">
+				<h3>Pic 4</h3>
+				<p>This is some caption.</p>
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</div> <!-- End of carousel -->
+	
+	
+	<!-- Music -->
+	<div class="col-xs-12 center-children" id="musictag">
+		<h1>Music</h1>
+	</div>
+	<div class="col-xs-12 col-sm-4 center-children music-content debug">
+		<h1 class="album-title">Life Through Emojis</h1>
+		<a href="https://itunes.apple.com/us/album/life-through-emojis-project/id1161550095">
+			<div class="overlay-container album-art">
+				<img class="img-responsive center-img" src="media/life_through_emojis_artwork.jpg">
+				<div class="overlay"></div>
+			</div>
+		</a>
+	</div>
+	<div class="col-xs-12 col-sm-4 center-children music-content debug">
+		<h1 class="album-title">Six Strings and a Stream</h1>
+		<a href="https://itunes.apple.com/us/album/six-strings-and-a-stream/id1033332739">
+			<div class="overlay-container album-art">
+				<img class="img-responsive center-img" src="media/six_strings_artwork.jpg">
+				<div class="overlay"></div>
+			</div>
+		</a>
+	</div>
+	<div class="col-xs-12 col-sm-4 center-children music-content debug">
+		<h1 class="album-title">Album / EP 3</h1>
+		<a href="https://www.netflix.com">
+			<div class="overlay-container album-art">
+				<img class="img-responsive center-img" src="media/six_strings_artwork.jpg">
+				<div class="overlay"></div>
+			</div>
+		</a>
+	</div>
+	
+	<!-- About -->
+	<div class="col-xs-12 dark-gray center-children" id="abouttag">
+		<h1>About</h1>
+	</div>
+	<div class="col-xs-12 col-sm-4 bio-container debug">
+		<div class="bio center-children debug">
+			<img class="img-responsive" src="media/gabe_pic.jpg"></img>
+			<h2>Gabe</h2>
+			<h3>Vocals / Guitar</h3>
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-4 bio-container debug">
+		<div class="bio center-children debug">
+			<img class="img-responsive" src="media/zac_pic.jpg"></img>
+			<h2>Zac</h2>
+			<h3>Production</h3>
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-4 bio-container debug">
+		<div class="bio center-children debug">
+			<img class="img-responsive" src="media/ryan_pic.png"></img>
+			<h2>Ryan</h2>
+			<h3>Bass</h3>
+		</div>
+	</div>
+	
+	<!-- Social Media -->
+	<div class="col-xs-12 center-children debug" id="contacttag">
+		<h1>Connect with us!</h1>
+	</div>
+	<div class="col-xs-3 debug">
+		<a href="https://soundcloud.com/gabefleck" class="social-media">
+			<img class="img-responsive center-img off-hover" src="media/soundcloud_circle.png"></img>
+			<img class="img-responsive center-img on-hover" src="media/soundcloud_circle_hover.png"></img>
+		</a>
+	</div>
+	<div class="col-xs-3 debug">
+		<a href="https://www.facebook.com/fabefleck" class="social-media">
+			<img class="img-responsive center-img off-hover" src="media/facebook_circle.png">
+			<img class="img-responsive center-img on-hover" src="media/facebook_circle_hover.png">
+		</a>
+	</div>
+	<div class="col-xs-3 debug">
+		<a href="https://twitter.com/fabegleck" class="social-media">
+			<img class="img-responsive center-img off-hover" src="media/twitter_circle.png"></img>
+			<img class="img-responsive center-img on-hover" src="media/twitter_circle_hover.png"></img>
+		</a>
+	</div>
+	<div class="col-xs-3 debug">
+		<a href="https://www.instagram.com/gabe.fleck/" class="social-media">
+			<img class="img-responsive center-img off-hover" src="media/instagram_circle.png"></img>
+			<img class="img-responsive center-img on-hover" src="media/instagram_circle_hover.png"></img>
+		</a>
+	</div>
+	
+	<!-- Booking -->
+	<div class="col-xs-12 center-children dark-gray debug" id="bookingtag">
+		<h1>Want to book us?</h1>
+	</div>
+	<div class="col-xs-12 center-children dark-gray">
+		<h1><b>CALL:</b> (555) 555 - 5555</h1>
+		<h1><b>EMAIL:</b> booking@gabefleck.com</h1>
+		<h1><b>FAX:</b> ??????</h1><br>
+	</div>
+	
+	<!-- Footer -->
+	<div class="col-xs-12 dark-red center-children footer debug">
+		<div class="col-xs-12 scroll-up-btn-container dark-red">
+			<div class="scroll-up-btn center-img">
+				<a href="#toptag">
+					<img class="off-hover" src="media/double_chevron_up.png">
+					<img class="on-hover" src="media/double_chevron_up_hover.png">
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-12 dark-red website-stamp">
+			<h2>Website by <a href="http://www.tonyanziano.com">Tony Anziano</a></h2>
+			<h3>2016</h3>
+		</div>
+	</div>
+</body>
+
+<script src="js/headhesive.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>
