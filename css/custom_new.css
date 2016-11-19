@@ -101,7 +101,7 @@ div[id$="tag"] > h1 {
 	padding-bottom: 10vh;
 }
 .fixed-nav-filler {
-	height:20vh;
+	height: 30vh;
 }
 h1.title {
 	color: white;
@@ -114,7 +114,7 @@ h1.title {
 	float: right;
 }
 .banner {
-	height: 20vh;
+	height: 30vh;
 	padding-top: 5vh;
 	position: fixed;
 	z-index: 20;	/* Bootstrap Carousel Bullets have z-index of 15 */
@@ -171,6 +171,12 @@ h1.title {
 }
 .top-of-page {
 	position: absolute;
+}
+.booking-link {
+	color: #ed1b24;
+}
+.booking-link:hover {
+	color: white;
 }
 
 /* Hide normal link styling in nav bar */
@@ -303,6 +309,7 @@ a.social-media > .on-hover {
 	/* Make banner relative and hide filler div */
 	.banner {
 		position: relative;
+		height: 20vh;
 	}
 	.fixed-nav-filler {
 		display: none;
