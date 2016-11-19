@@ -60,19 +60,25 @@
 	background-color: #d8d8d8;
 	padding-top: 50px;
 	padding-bottom: 30px;
-	height: 65vh;
+	/*height: 80vh;*/
 }
 .bio {
+	position: relative;
 	background-color: white;
 	padding-bottom: 20px;
 	margin: auto;
-	box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
 	transition-property: transform;
 	transition-duration: .5s;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+	/*height: 65vh*/
 }
 .bio > img {
 	margin: auto;
-	max-height: 400px;
+	height: 40vh;
+}
+.bio-social-media-container {
+	display: none;
+	overflow: auto;
 }
 
 /* Section Headers */
@@ -99,7 +105,7 @@ div[id$="tag"] > h1 {
 }
 h1.title {
 	color: white;
-	font-size: 48px;
+	font-size: 36px;
 }
 .dropdown-btn {
 	background-image: url("../media/dropdown_button_resize.png");
@@ -274,6 +280,13 @@ a.social-media > .on-hover {
 	padding-bottom: 5vh;
 }
 
+/* Mobile site title fix */
+@media only screen and (min-width: 668px) {
+	h1.title {
+		font-size: 48px;
+	}
+}
+
 /* Anything larger than mobile */
 @media only screen and (min-width: 768px) {
 	/* Adjust banner and get rid of mobile menu */
@@ -331,6 +344,49 @@ a.social-media > .on-hover {
 	/* Show scroll to top button */
 	.scroll-up-btn-container {
 		display: block;
+	}
+	/* Bio social media buttons */
+	.bio-social-media-container {
+		padding-top: 45px;
+		display: block;
+		background-color: white;
+	}
+	.bio-social-media-container img {
+		padding-bottom: 0 !important;
+	}
+	.bio-social-media-btn {
+		display: inline-block;
+	}
+	.bio:hover .bio-social-media-container div {
+		animation: PopUp .75s ease-in-out;
+	}
+	.bio:hover .bio-social-media-container div:nth-child(1) {
+		animation-delay: 0.1s;
+	}
+	.bio:hover .bio-social-media-container div:nth-child(2) {
+		animation-delay: 0.3s;
+	}
+	.bio:hover .bio-social-media-container div:nth-child(3) {
+		animation-delay: 0.5s;
+	}
+	.bio:hover .bio-social-media-container div:nth-child(4) {
+		animation-delay: 0.7s;
+	}
+	/* Bio pics */
+	.bio > img {
+		height: 400px;
+	}
+}
+
+@keyframes PopUp {
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(-35%);
+	}
+	100% {
+		transform: translateY(0%);
 	}
 }
 
