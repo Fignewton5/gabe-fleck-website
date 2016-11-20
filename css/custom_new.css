@@ -113,10 +113,20 @@ h1.title {
 	width: 100px;
 	float: right;
 }
+body {
+	margin: 0;
+}
+.banner-container {
+	position: relative;
+	width: 100%;
+}
 .banner {
 	height: 30vh;
 	padding-top: 5vh;
 	position: fixed;
+	width: 100vw;
+	top: 0;
+	left: 0;
 	z-index: 20;	/* Bootstrap Carousel Bullets have z-index of 15 */
 }
 .banner-title {
@@ -177,6 +187,9 @@ h1.title {
 }
 .booking-link:hover {
 	color: white;
+}
+.booking-email {
+	font-size: 36px;
 }
 
 /* Hide normal link styling in nav bar */
@@ -279,11 +292,18 @@ a.social-media > .on-hover {
 	height: 400px;
 }
 .album-title {
-	height: 10vh;
+	padding-bottom: 20px;
 }
 .music-content {
 	border-top-style: solid;
 	padding-bottom: 5vh;
+}
+
+/* Mobile site Booking email fix */
+@media only screen and (max-width: 540px) {
+	.booking-email {
+		font-size: 20px;
+	}
 }
 
 /* Mobile site title fix */
