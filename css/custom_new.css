@@ -316,6 +316,9 @@ a.social-media > .on-hover {
 /* Anything larger than mobile */
 @media only screen and (min-width: 768px) {
 	/* Adjust banner and get rid of mobile menu */
+	body {
+		overflow-x: hidden;
+	}
 	.banner-title {
 		text-align: center;
 	}
@@ -325,6 +328,9 @@ a.social-media > .on-hover {
 	}
 	.banner-nav {
 		display: block;
+	}
+	.banner-title {
+		width: 100vw;
 	}
 	/* Make banner relative and hide filler div */
 	.banner {
