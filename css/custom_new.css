@@ -75,9 +75,9 @@
 .bio > img {
 	margin: auto;
 	height: 40vh;
+	background-color: black;
 }
 .bio-social-media-container {
-	display: none;
 	overflow: auto;
 }
 
@@ -186,10 +186,13 @@ body {
 	color: #ed1b24;
 }
 .booking-link:hover {
-	color: white;
+	color: #ed1b24;
 }
 .booking-email {
 	font-size: 36px;
+}
+#bookingtag + div {
+	padding-bottom: 30px;
 }
 
 /* Hide normal link styling in nav bar */
