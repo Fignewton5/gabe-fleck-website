@@ -387,6 +387,7 @@ a.social-media > .on-hover {
 	/* Styling for wider layouts */
 	.music-content {
 		border-style: groove;
+		height: 600px;
 	}
 	/* Headhesive */
 	.headhesive {
