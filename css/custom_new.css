@@ -89,6 +89,37 @@ div[id$="tag"] > h1 {
 	font-size: 48px;
 }
 
+/* Pop-out mobile navigation menu */
+#pop-out-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	width: 75vw;
+	height: 100vh;
+	text-align: center;
+	transition: all .5s ease-in-out;
+}
+.pop-out-nav-hidden {
+	transform: translateX(-100%);
+}
+.pop-out-nav-shown {
+	transform: translateX(0%);
+}
+#pop-out-nav > div {
+	height: 30vh;
+	display: table;		/* Vertical center */
+	text-align: center;
+	margin: auto;
+}
+#pop-out-nav a {
+	display: table-cell;
+	vertical-align: middle;
+}
+#pop-out-nav h1 {
+	color: white;
+}
+
 /* Banner / Footer */
 .nav-btn {
 	height: 100%;
