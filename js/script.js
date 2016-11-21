@@ -13,7 +13,6 @@ $(".banner-dropdown").click(function(event){
 	popoutHidden = false;
 });
 $("#pop-out-nav a").click(function(event){
-	console.log("clicked");
 	event.preventDefault();
 	popoutNav.removeClass("pop-out-nav-shown");
 	popoutNav.addClass("pop-out-nav-hidden");
@@ -25,8 +24,8 @@ $("#pop-out-nav a").click(function(event){
 $("#pop-out-nav~div").click(function(event){
 	//when a div that is clicked other than the pop-out menu
 	//hide the menu
-	event.preventDefault();
 	if(!popoutHidden){
+		event.preventDefault();
 		popoutNav.removeClass("pop-out-nav-shown");
 		popoutNav.addClass("pop-out-nav-hidden");
 		popoutHidden = true;
@@ -35,7 +34,6 @@ $("#pop-out-nav~div").click(function(event){
 
 //grab the element the hashtag refers to and scroll to its top
 $(".banner-nav a[href$='tag'], .scroll-up-btn a[href$='tag']").click(function(event){
-	console.log("second selector");
 	event.preventDefault();
 	$body.animate({
 		scrollTop: $(this.hash).offset().top
