@@ -389,6 +389,9 @@ a.social-media > .on-hover {
 		border-style: groove;
 		height: 600px;
 	}
+	.album-title {
+		height: 120px;
+	}
 	/* Headhesive */
 	.headhesive {
 		position: fixed;
