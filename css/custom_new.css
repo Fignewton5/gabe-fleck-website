@@ -162,7 +162,7 @@ body {
 }
 .banner {
 	height: 30vh;
-	padding-top: 5vh;
+	/*padding-top: 5vh;*/
 	position: fixed;
 	width: 100vw;
 	top: 0;
@@ -177,6 +177,18 @@ body {
 	display: none;
 	padding-right: 0;
 	padding-left: 0;
+}
+.banner-dropdown {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+}
+.site-logo {
+	max-height: 30vh;
 }
 .footer  h2, .footer  h3 {
 	color: white;
@@ -383,6 +395,12 @@ a.social-media > .on-hover {
 	.banner {
 		position: relative;
 		height: 20vh;
+	}
+	.site-logo {
+		position: absolute;
+		max-height: 20vh;
+		left: 50%;
+		transform: translate(-50%, 0);
 	}
 	.fixed-nav-filler {
 		display: none;
